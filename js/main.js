@@ -1,20 +1,11 @@
-let btn = document.querySelector(".nb1");
+let btn = document.querySelector(".btn1");
 let infoPage = document.querySelector(".info-Page");
 
 btn.addEventListener("click", (e) => {
     infoPage.classList.add("show");
-    
-    let exitBtn = document.createElement("span");
-    let mainBox = document.querySelector(".info-Page .main-box");
 
-    exitBtn.className = "exit-btn";
-    exitBtn.textContent = "X";
-    mainBox.appendChild(exitBtn);
+    let mainBox = document.querySelector(".info-Page .main-box");
     console.log(mainBox); 
-    exitBtn.onclick = function() {
-        infoPage.classList.remove("show");
-        exitBtn.remove()
-    }
 })
 
 let resultBtn = document.querySelector(".info-Page .result-btn")
@@ -49,5 +40,4 @@ resultBtn.addEventListener("click", (e) => {
     resultDiv.appendChild(res3)
     resultDiv.appendChild(res4)
 
-    resultBtn.classList.add("display")
 })

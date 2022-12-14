@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>نظام تحليل مالي</title>
     <link rel="stylesheet" href="css/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <!-- start navBar -->
@@ -14,51 +17,50 @@
     <!-- Start content -->
     <div class="content">
         <div class="container">
-            <div class="main-box">
-                <span class="btn nb1">نسب السيولة</span>
+            <div class="mainbox">
+                <ul class="list">
+                    <li class="btn btn1">نسب السيولة</li>
+                    <li class="btn btn2">النشاط</li>
+                    <li class="btn btn3">نسبة القدرة على السداد</li>
+                    <li class="btn btn4">نسبة الربحية</li>
+                    <li class="btn btn5">نسب المخاطرة</li>
+                    <li class="btn btn6">نسب الأسهم</li>
+                </ul>
+                    <!-- Start info-page -->
+                <div class="info-Page">
+                    <div class="main-box">
+                        <div class="content">
+                            <div class="box">
+                                <span class="name">راس المال العامل</span>
+                                <input id="in1" type="text"  placeholder="مجموع الأوصول المتداولة">
+                                <input id="in2" type="text" placeholder="مجموع الخصوم المتداولة">
+                            </div>
+                            <div class="box">
+                                <span class="name">النسبة الجارية</span>
+                                <input id="in3" type="text" placeholder="مجموع الأوصول المتداولة">
+                                <input id="in4" type="text" placeholder="مجموع الخصوم المتداولة">
+                            </div>
+                            <div class="box">
+                                <span class="name">نسبة السداد السريع </span>
+                                <input id="in5" type="text" placeholder="مجموع الأصول المتداولة  ">
+                                <input id="in6" type="text" placeholder="المخزون السلعي">
+                                <input id="in7" type="text" placeholder="المصاريف المقدمة">
+                                <input id="in8" type="text" placeholder="مجموع الخصوم المتداولة">
+                            </div>
+                            <div class="box">
+                                <span class="name">نسبة النقدية</span>
+                                <input id="in9" type="text" placeholder="النقدية وما في حكمها">
+                                <input id="in10" type="text" placeholder="الخصوم المتداولة">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="result-btn">الناتج</p>
+                </div>
+                <!-- End info-page -->
             </div>
         </div>
     </div>
     <!-- End content -->
-    <!-- Start info-page -->
-    <div class="info-Page">
-        <div class="main-box">
-            <div class="content">
-                <div class="box">
-                    <span class="name">راس المال العامل</span>
-                    <input id="in1" type="text"  placeholder="مجموع الأوصول المتداولة">
-                    <span class="exp">-</span>
-                    <input id="in2" type="text" placeholder="مجموع الخصوم المتداولة">
-                </div>
-                <div class="box">
-                    <span class="name">النسبة الجارية</span>
-                    <input id="in3" type="text" placeholder="مجموع الأوصول المتداولة">
-                    <span class="exp">/</span>
-                    <input id="in4" type="text" placeholder="مجموع الخصوم المتداولة">
-                </div>
-                <div class="box">
-                    <span class="name">نسبة السداد السريع </span>
-                    <input id="in5" type="text" placeholder="مجموع الأصول المتداولة  ">
-                    <span class="exp">-</span>
-                    <span class="exp">(</span>
-                    <input id="in6" type="text" placeholder="المخزون السلعي">
-                    <span class="exp">+</span>
-                    <input id="in7" type="text" placeholder="المصاريف المقدمة">
-                    <span class="exp">)</span>
-                    <span class="exp">/</span>
-                    <input id="in8" type="text" placeholder="مجموع الخصوم المتداولة">
-                </div>
-                <div class="box">
-                    <span class="name">نسبة النقدية</span>
-                    <input id="in9" type="text" placeholder="النقدية وما في حكمها">
-                    <span class="exp">/</span>
-                    <input id="in10" type="text" placeholder="الخصوم المتداولة">
-                </div>
-            </div>
-        </div>
-        <p class="result-btn">الناتج</p>
-    </div>
-    <!-- End info-page -->
     <script src="./js/main.js"></script>
 </body>
 </html>
