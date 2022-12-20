@@ -125,8 +125,17 @@ body{
     height: 30px;
     padding: 5px;
 }
-
-.info-Page .result-btn{
+.info-Page .result {
+	display: flex;
+    flex-direction: column;
+}
+.info-Page .result .res{
+    display: none;
+}
+.info-Page .result .res.show{
+    display: flex;
+}
+.info-Page .result .result-btn{
     padding: 5px 45px;
     margin: 4px;
     width: fit-content;
@@ -140,6 +149,11 @@ body{
     color: white;
     border-radius: 3px;
     transition: .5s all;
+    display: block;
+}
+.info-Page .result .errorMsg{
+    color: #ce3737;
+    margin: 0 10px 0 0;
 }
 .info-Page .result-btn:hover{
     background-color: #181d31;
@@ -160,5 +174,16 @@ body{
     background: #f0e9d2;
     padding: 4px;
     color: #181d31;
+}
+.info3 .box{
+    display: flex;
+    align-items: center;
+}
+.info3 .main-box .box .name{
+    font-size: 18px;
+}
+#in13,
+#in15{
+    width: 405px;
 }
 /* End info page */
